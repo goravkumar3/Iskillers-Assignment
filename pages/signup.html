@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-storage.js"></script>
+    <script src="./../js/firebase.js"></script>
+    <link rel="stylesheet" href="./../css/signup.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form_div">
+            <div class="sign">
+                <h1>Sign up</h1>
+            </div>
+            <div class="form">
+                <div class="input-floating">
+                    <label for="email">First Name</label>
+                    <input type="text"  id="Fname" >
+                </div>
+                <div class="input-floating">
+                    <label for="email">Last Name</label>
+                    <input type="text"  id="Lname" >
+                </div>
+                <div class="input-floating">
+                    <label for="email">Father Name</label>
+                    <input type="text"  id="Father_name" >
+                </div>
+                <div class="input-floating">
+                    <label for="email">Email</label>
+                    <input type="email" name="" id="email" >
+                </div>
+                <div class="input-floating">
+                    <label for="password" >Password</label>
+                    <input type="password" name="" id="password" >
+                </div>
+                <div class="input-floating">
+                    <label for="email">Number</label>
+                    <input type="number"  id="number" >
+                </div>
+                <div class="input-floating">
+                    <label for="email">cinc</label>
+                    <input type="number"  id="cinc" >
+                </div>
+                <div class="input-floating">
+                    <label for="">Select Course</label>
+                    <select id="Courses" name="Courses">
+                        <option >Select Course</option>
+                        <option >Web Developer</option>
+                        <option >App Developer</option>
+                        <option >Wordpress</option>
+                        <option >Graphic Designer</option>
+                        <option >Freelancing</option>
+                    </select>
+                </div>
+                <div class="input-floating">
+                    <label for="">Select your Qualification</label>
+                    <select id="qualifying" name="qualify">
+                        <option >Select Qualification</option>
+                        <option >Matriculation</option>
+                        <option >Intermediate</option>
+                        <option >Graduate</option>
+                    </select>
+                </div>
+                <div class="input-floating">
+                    <label for="">Select Gender</label>
+                    <select id="gender" name="Gender">
+                        <option >Select Gender</option>
+                        <option >Male</option>
+                        <option >Female</option>
+                        <option >other</option>
+                    </select>
+                </div>
+                <div class="input-floating">
+                    <label >Choose Picture</label>
+                    <div class="picture-container">
+                        <div class="picture">
+                          <img class="picture-src" id="wizardPicturePreview" title="">
+                          <input type="file" id="wizard-picture" class="" onchange="profile_image(event)"> 
+                        </div>
+                      </div>
+                </div>
+                <p id="message"></p>
+                <div class="btn">
+                    <a href="./../index.html" class="link">Already have an account?</a>
+                    <button onclick="signup()">Signup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="./../js/signup.js"></script>
+</html>

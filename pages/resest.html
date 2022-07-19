@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+    <script src="./../js/firebase.js"></script>
+    <link rel="stylesheet" href="./../css/reset.css">
+</head>
+<div class="container">
+    <div class="form_div">
+        <div class="sign">
+            <h1>Forgot Password</h1>
+        </div>
+        <div class="form">
+            <p>Just need to confirm your email to send you instructions to reset your password.</p>
+            <div class="input-floating">
+                <label for="email">Email</label>
+                <input type="email" name="" id="email" class="email_input">
+            </div>
+            <p id="message"></p>
+            <div class="btn">
+                <button class="log" onclick="reset()">Resest</button>
+            </div>
+    </div>
+</div>
+<body>
+</body>
+<script src="./../js/reset.js"></script>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+    <script src="./js/firebase.js"></script>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form_div">
+            <div class="sign">
+                <h1>Log in</h1>
+            </div>
+            <div class="form">
+                <div class="input-floating">
+                    <label for="email">Email</label>
+                    <input type="email" name="" id="email" class="email_input">
+                </div>
+                <div class="input-floating">
+                    <label for="password">Password</label>
+                    <input type="password" name="" id="password" class="pass_input">
+                </div>
+                <p id="message"></p>
+                <div class="btn">
+                    <a href="./pages/signup.html" class="link">Create a new account!</a>
+                    <button class="log" onclick="login()">Login</button>
+                </div>
+                <div class="sign_part">
+                    <span>Or sign in with</span>
+                    <hr />
+                </div>
+                <div class="signup_with">
+                     <button onclick="google()" class="google_btn"><img src="./icons/google.png" alt=""></button>
+                </div>
+                <div class="forget">
+                    <h4><a href="./pages/resest.html">Forget password?</a></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/login.js"></script>
+
+</html>

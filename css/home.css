@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  background-color: #000000;
+  color: #ffffff;
+}
+nav {
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  background: #111517;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.profile_icon img {
+  height: 50px;
+  border-radius: 50%;
+  padding: 0px 20px;
+}
+.main_menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu a {
+  text-decoration: none;
+  padding: 10px;
+  color: #ffffff;
+}
+.menu a:hover {
+  text-decoration: underline;
+}
+.home {
+  border-left: 1px solid gray;
+}
+.contact a {
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: transparent;
+  margin-right: 1em;
+}
+.humburgur {
+  display: none;
+}
+main{
+  background: url(./../images/tp244-bg4-05.jpg) no-repeat center center/cover;
+  height: auto;
+  padding: 250px 0 20px 0;
+}
+main h1{
+text-transform: uppercase;
+font-size: 42px;
+}
+.info h4{
+font-size: 25px;
+margin-top: 20px;
+}
+.info{
+  text-align: center;
+}
+.info button{
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 22px;
+  background: linear-gradient(to right,#ff7082,#c0e9ff);
+  padding: 10px 40px;
+  margin-top: 40px;
+  border-radius: 10px;
+  transition: .2s opacity;
+  cursor: pointer;
+}
+.info button:hover{
+  opacity: 0.8;
+}
+ /* message box */
+/* .message{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1;
+}
+.box{
+  display: none;
+}
+.messagebox{
+  display: block;
+  background-color: #ffffff;
+  color: #000000;
+  max-width: 200px;
+  height: auto;
+}
+.messaage_btn {
+  background-color: rgb(65, 148, 65);
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+}
+.messbtn{
+  width: 200px;
+} */
+/* message box end */
+@media only screen and (max-width: 668px) {
+  nav {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .humburgur {
+    display: block;
+    padding: 0px 30px;
+  }
+  .humburgur img {
+    height: 40px;
+    filter: invert();
+  }
+  .main_menu {
+    display: none;
+  }
+  .menu a {
+    display: block;
+  }
+  .contact {
+    margin: 40px 0px;
+    padding-bottom: 30px;
+  }
+  .sub_menu {
+    display: block;
+  }
+}

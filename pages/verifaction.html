@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple loader</title>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+    <script src="./../js/firebase.js"></script>
+    <link rel="stylesheet" href="./../css/verification.css">
+</head>
+
+<body>
+    <div class="container">
+       <div class="verify_info">
+        <img src="./../icons/email.png" alt="">
+        <h1>Confrim your email address</h1>
+        <p>We sent verification email to : <span id="getEmail"></span>
+            please check your inbox for an account activation link from Iskillers.pkNote: If you don't see the email in your inbox, check other email folders, like your junk, spam, social, etc.<br/>
+              If you find your email in spam/junk folders, please mark it as Not Spam / Not Junk to move it to your inbox.<br/>
+              if you verified your email then click on the <span><a href="./home.html">Home</a></span>
+              Moreover, if you still unable to find the activation email, you can resend email verification by click on resend</p>
+                <button onclick="send">resend</button>
+                <p id="message"></p>
+       </div>
+    </div>
+</body>
+<script src="./../js/verification.js"></script>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+  <script src="./../js/firebase.js"></script>
+  <link rel="stylesheet" href="./../css/home.css">
+</head>
+<nav>
+  <div class="profile_icon">
+    <span><a href="./profile.html"><img id="profile_image" alt=""></a></span>
+  </div>
+  <div class="humburgur">
+    <img src="./../icons/menu (2).png" alt="">
+  </div>
+  <div class="main_menu">
+    <div class="menu">
+      <span><a href="#" class="home">Home</a></span>
+      <span><a href="#">About</a></span>
+      <span><a href="#">Courses</a></span>
+      <span><a href="./Adminmessage.html">Admin messages</a></span>
+      <span><a href="#">Contact</a></span>
+    </div>
+    <div class="contact">
+      <span><a href="#" onclick="signout()">Log out</a></span>
+    </div>
+  </div>
+</nav>
+<main>
+  <div class="info">
+    <h1>Achieve your new skill with us</h1>
+    <h4>Learn faster, create better, and practice will make you.<br/>We will teach you computer skills and get expert guidance you need to succeed.
+    </h4>
+    <button>Get Started</button>
+  </div>
+</main>
+<!-- Message box start -->
+<!-- <section class="message">
+  <div id="messagebox" class="box">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, expedita?</p>
+  </div>
+  <div >
+   <button class="messaage_btn" onclick="showMessage()">Message</button>
+  </div>
+</section> -->
+<!-- Message box end -->
+<body>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="./../js/home.js"></script>
+</html>
