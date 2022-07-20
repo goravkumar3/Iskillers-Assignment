@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challan Page</title>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-storage.js"></script>
+    <script src="./../js/firebase.js"></script>
+    <link rel="stylesheet" href="./../css/challan.css">
+</head>
+<body>
+<nav>
+      <img src="./../icons/arrow (1).png" alt="" onclick="back()">
+</nav>
+<main>
+   <div class="challan_div">
+    <div class="picture-container">
+        <h2>Upload your challan</h2>
+        <div class="picture">
+            <img class="picture-src" id="wizardPicturePreview" title="">
+            <input type="file" id="wizard-picture" class="" onchange="challan_image(event)">
+        </div>
+    </div>
+    <div>
+        <p id="ShowUploadprocess"></p>
+    <button onclick="upload()">Upload</button>
+    </div>
+   </div>
+</main>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="./../js/challan.js"></script>
+</html>
