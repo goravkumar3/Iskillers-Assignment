@@ -27,7 +27,7 @@ let login=()=>{
               window.location.href = "./pages/home.html";
               }
               else{
-                window.location.href ='./verifaction.html';
+                window.location.href ='./pages/verifaction.html';
               }
           },3000);
       })

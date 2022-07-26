@@ -4,7 +4,8 @@ firebase.auth().onAuthStateChanged((user) => {
        uid = user.uid;
 
     console.log(user);
-    if(user.emailVerified) {
+    if(!user.emailVerified) {
+    window.location.href = "./verifaction.html";
       }
   } else {
     // User is signed out
@@ -16,7 +17,11 @@ firebase.auth().onAuthStateChanged((user) => {
   firebase.auth().signOut();
   }
   $(".humburgur").click(function () {
-    $(".main_menu").toggleClass("sub_menu");
+    $(".main_menu").toggleClass("show_menu");
+    $(".subnav").toggleClass("level_menu");
+  });
+  $(".chevron").click(function () {
+    $(".submenu").toggleClass("sub_menu");
   });
 const profile_image=document.getElementById("profile_image");
 setTimeout(() => {
