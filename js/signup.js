@@ -35,7 +35,7 @@ const profile_image=(e)=>{
       // Observe state change events such as progress, pause, and resume
       // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
       var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-      console.log('Upload is ' + progress + '% done');
+      message.innerHTML='Upload is ' + progress + '% done';
     }, 
     (error) => {
       // Handle unsuccessful uploads
@@ -97,20 +97,20 @@ let signup = () => {
       Gender: gender.value,
       ProfileImage:profileview,
     };
-
+      console.log(userInfo);
     firebase
       .auth()
       .createUserWithEmailAndPassword(userInfo.Email, userInfo.Password)
       .then((userCredential) => {
         // Signed in
         var user = userCredential.user;
+        firebase.firestore().collection("users/").doc(user.uid).set(userInfo);
         user.sendEmailVerification();
         message.style.color = "green";
         message.innerHTML = "signed up successfully";
-        firebase.firestore().collection("users/").doc(user.uid).set(userInfo);
         setTimeout(() => {
           window.location.href = "./verifaction.html";
-        }, 2000);
+        }, 3000);
         // ...
       })
       .catch((error) => {

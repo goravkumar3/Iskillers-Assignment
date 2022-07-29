@@ -17,6 +17,7 @@ const fatherName = document.getElementById("Father_name");
 const number = document.getElementById("number");
 const CINc = document.getElementById("cinc");
 const picture = document.getElementById("wizardPicturePreview");
+const uploadProcess=document.getElementById("uploadProcess");
 setTimeout(() => {
   firebase
     .firestore()

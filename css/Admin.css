@@ -25,10 +25,12 @@ main {
   align-items: center;
   margin-top: 80px;
 }
+.head{
+  text-align: center;
+}
 .message_box{
     width: 60%;
-    background-color: #ffffff;
-    color: #111517;
+    background-color: rgb(19 17 29);
     padding: 40px;
 }
 .showMessage{
@@ -44,4 +46,9 @@ main {
 }
 .h3{
   flex: 1;
+}
+@media  only screen and (max-width: 420px) {
+  main,.message_box{
+    width: 100%;
+  }
 }

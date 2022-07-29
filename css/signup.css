@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.container {
+body{
   background: #e0eafc;
   background: -webkit-linear-gradient(to right, #cfdef3, #e0eafc);
   background: linear-gradient(to right, #cfdef3, #e0eafc);
@@ -80,7 +80,7 @@ button {
   padding: 20px;
 }
 .picture{
-  width: 10%;
+  width: 20%;
   height: 60px;
   background-color: transparent;
   border: 1px solid #CCCCCC;
@@ -122,5 +122,12 @@ button {
 .info{
   color: #000000;
 }
-
+@media  only screen and (max-width: 420px) {
+  .form_div{
+    width: 100%;
+  }
+  .picture{
+    width: 30%;
+  }
+}
 /*Profile Pic End*/

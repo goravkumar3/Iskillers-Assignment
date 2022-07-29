@@ -13,19 +13,19 @@ firebase.auth().onAuthStateChanged((user) => {
   }
 });
 const showMessage = document.querySelector("#messageBox");
+const ShowDiv = document.createElement("div");
+messageBox.appendChild(ShowDiv);
 firebase
-  .database()
-  .ref("messages/")
-  .on("child_added", (TodoData) => {
-    const key = TodoData.key;
-    TodoData.forEach((TodoValue) => {
-      const value = TodoValue.val();
-      const ShowDiv = document.createElement("div");
-      ShowDiv.setAttribute("class", "showMessage");
-      messageBox.appendChild(ShowDiv);
-      const out = document.createElement("h3");
-      out.setAttribute("class", "h3");
-      ShowDiv.appendChild(out);
+.database()
+.ref("messages/")
+.on("child_added", (TodoData) => {
+  const key = TodoData.key;
+  TodoData.forEach((TodoValue) => {
+    const value = TodoValue.val();
+    const out = document.createElement("h3");
+    out.setAttribute("class", "h3");
+    out.setAttribute("class", "showMessage");
+      ShowDiv.prepend(out);
       out.textContent=value;
     });
   });

@@ -33,10 +33,10 @@ setTimeout(() => {
     .then((query) => {
       let data = query.data();
       // data.id=doc.id;
-      profile_image.setAttribute("src",data.ProfileImage);
       console.log(data);
+      profile_image.setAttribute("src",data.ProfileImage);
     });
-}, 3000);
+}, 2000);
   // let showMessage=()=>{
   //  $("#messagebox").toggleClass("messagebox");
   //  $(this).toggleClass("messbtn");

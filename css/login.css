@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.container {
+body{
   background: #e0eafc;
   background: -webkit-linear-gradient(to right, #cfdef3, #e0eafc);
   background: linear-gradient(to right, #cfdef3, #e0eafc);
@@ -12,12 +12,17 @@
   align-items: center;
   min-height: 100vh;
 }
+.log_title{
+  text-align: center;
+  /* background: linear-gradient(to right,#121212, #00a862);
+  color: transparent; */
+}
 .form_div {
   background-color: #ffff;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
   padding: 40px;
   margin: 50px 0;
-  width: 50%;
+  width: 60%;
   min-width: 300px;
 }
 .input-floating {
@@ -102,4 +107,9 @@ span{
 .forget a{
 text-decoration: none;
 color: #121212;
+}
+@media  only screen and (max-width: 420px) {
+  .form_div{
+    width: 100%;
+  }
 }
