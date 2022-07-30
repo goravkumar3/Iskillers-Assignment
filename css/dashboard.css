@@ -36,7 +36,7 @@ main {
   background-color: #ffffff;
   width: 100%;
   color: #05ae0e;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;

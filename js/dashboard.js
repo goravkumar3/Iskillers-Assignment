@@ -62,7 +62,7 @@ let course = () => {
 };
 let Upload = () => {
   courseInfo.style.display = "none";
-  challan_upload.style.display = "block";
+  challan_upload.style.display = "flex";
   waiting.style.display = "none";
 };
 let wait = () => {
