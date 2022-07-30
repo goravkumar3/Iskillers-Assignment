@@ -129,6 +129,13 @@ main {
   width: 80%;
   text-align: center;
 }
+.startBtn{
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 20px 40px;
+  border: none;
+  outline: none; 
+}
 @media  only screen and (max-width: 420px) {
   .Course,.challan_div,.dashboard_btn{
     width: 100%;

@@ -49,6 +49,10 @@ setTimeout(() => {
       coursePara.textContent =
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime neque architecto consectetur voluptatem? Unde sapiente magnam voluptatum quisquam excepturi asperiores ratione, assumenda, maxime, eligendi laboriosam provident molestias voluptatibus at perferendis.";
         courseInfo.appendChild(coursePara);
+        const startBtn=document.createElement("button");
+        startBtn.textContent="Get Started";
+        startBtn.setAttribute("class", "startBtn");
+        courseInfo.appendChild(startBtn);
       });
 }, 2000);
 let course = () => {
