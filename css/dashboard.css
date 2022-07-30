@@ -36,6 +36,9 @@ main {
   background-color: #ffffff;
   width: 120%;
   color: #05ae0e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*Profile Pic Start*/
 .profile_container {
