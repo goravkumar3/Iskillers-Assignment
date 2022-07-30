@@ -29,7 +29,7 @@ function readURL(input) {
   }
 }
 const courseInfo = document.querySelector("#courseInfo");
-const challan_upload = document.querySelector("#challanUpload");
+const challan_upload = document.querySelector(".challan_div");
 const waiting = document.querySelector("#wait");
 courseInfo.style.display = "block";
 challan_upload.style.display = "none";
