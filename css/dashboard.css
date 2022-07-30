@@ -124,6 +124,9 @@ main {
 .infoBtn:hover {
   background-color: #000000;
 }
+.infoBtn:last-child{
+  cursor: wait;
+}
 .Course {
   background-color: rgb(19 17 29);
   width: 80%;
