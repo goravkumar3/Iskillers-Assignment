@@ -87,7 +87,7 @@ let update = () => {
       CINC: CINc.value,
     })
     .then(() => {
-      console.log("Updated user info");
+      alert("Successfully updated");
     });
 };
 $(document).ready(function () {
