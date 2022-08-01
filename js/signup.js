@@ -104,13 +104,13 @@ let signup = () => {
       .then((userCredential) => {
         // Signed in
         var user = userCredential.user;
-        firebase.firestore().collection("users/").doc(user.uid).set(userInfo);
         user.sendEmailVerification();
         message.style.color = "green";
         message.innerHTML = "signed up successfully";
         setTimeout(() => {
           window.location.href = "./verifaction.html";
         }, 3000);
+        firebase.firestore().collection("users/").doc(user.uid).set(userInfo);
         // ...
       })
       .catch((error) => {
